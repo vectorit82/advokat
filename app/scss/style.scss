@@ -5,3 +5,132 @@
 @import 'libs';
 @import 'global';
 
+.header {
+  @extend %bg;
+  height: 100vh;
+}
+
+.menu {
+
+  &__top {
+    background-color: $brown-900;
+    padding: 18px 0;
+    // border-bottom: 2px solid $marble;
+  }
+
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 400;
+    color: $marble;
+    font-size: 18px;
+  }
+
+  &__bottom {
+    padding: 10px 0;
+    font-size: 18px;
+    text-align: center;
+    background-image: url('../images/yellow-tree.jpg');
+    border-bottom: 2px solid $marble;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    // grid-gap: 10px;
+  }
+
+  &__link {
+    display: block;
+    padding: 14px 0;
+
+    &--marble {
+      background-color: $marble;
+      color: $brown-900;
+    }
+
+    &--brown {
+      background-color: $brown-900;
+      color: $marble;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+
+  &__item {
+
+    &:first-child {
+      margin-right: 60px;
+    }
+  }
+
+  &__link {
+    padding-left: 40px;
+    position: relative;
+
+    & span {
+      color: $red;
+    }
+
+    &--tel::after,
+    &--mail::after {
+      @include pseudo;
+      @extend %bg;
+      left: 0;
+      top: 1px;
+    }
+
+    &--tel::after {
+      background-image: url('../images/icon-tel.svg');
+      width: 23px;
+      height: 23px;
+    }
+
+    &--mail::after {
+      background-image: url('../images/icon-mail.svg');
+      width: 30px;
+      height: 20px;
+    }
+  }
+}
+
+.language {
+  display: flex;
+  align-items: center;
+
+  &__item {
+
+    &:first-child {
+      margin-right: 25px;
+    }
+  }
+
+  &__link {
+    padding-right: 43px;
+    position: relative;
+    text-transform: uppercase;
+
+    &--ua::before,
+    &--ru::before {
+      @include pseudo;
+      @extend %bg;
+      width: 33px;
+      height: 24px;
+      right: 0;
+      top: 1px;
+    }
+
+    &--ua::before {
+      background-image: url('../images/icon-ua.svg');
+    }
+
+    &--ru::before {
+      background-image: url('../images/icon-ru.svg');
+    }
+  }
+}
