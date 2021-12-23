@@ -8,6 +8,114 @@
 .header {
   @extend %bg;
   height: 100vh;
+  color: $marble;
+
+  &__wrapper {
+    position: relative;
+    height: calc(100vh - 160px);
+  }
+
+  &__inner {
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+
+    &::after {
+      @include pseudo;
+      background-image: url('../images/badge.svg');
+      @extend %bg;
+      width: 133px;
+      height: 154px;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 48px;
+    padding: 17px;
+    background-color: rgba(40, 18, 5, 0.56);
+    border-radius: 5px;
+    margin-bottom: 60px;
+  } 
+
+  &__blockquote {
+    display: flex;
+    flex-direction: column;
+    max-width: 815px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  &__phrase {
+    display: block;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 400;
+
+    &--two {
+      margin: 0 auto;
+    }
+
+    &--three {
+      margin-left: auto;
+    }
+  }
+
+  &__btn-inner {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    margin-right: 20px;
+  }
+
+  &__line {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: 3px;
+    background-color: $marble;
+    opacity: 0.5;
+    margin-right: 20px;
+  }
+
+  &__bottom-btn {
+    position: absolute;
+    display: block;
+    width: 123px;
+    height: 44px;
+    border: 2px solid $marble;
+    border-radius: 5px;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    opacity: 0.5;
+
+    &::after {
+      @include pseudo;
+      background-image: url('../images/arrow.svg');
+      @extend %bg;
+      width: 40px;
+      height: 26px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 .menu {
@@ -15,7 +123,6 @@
   &__top {
     background-color: $brown-900;
     padding: 18px 0;
-    // border-bottom: 2px solid $marble;
   }
 
   &__top-inner {
@@ -32,14 +139,13 @@
     padding: 10px 0;
     font-size: 18px;
     text-align: center;
-    background-image: url('../images/yellow-tree.jpg');
+    background-image: url('../images/tree3.jpg');
     border-bottom: 2px solid $marble;
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    // grid-gap: 10px;
   }
 
   &__link {
@@ -123,6 +229,7 @@
       height: 24px;
       right: 0;
       top: 1px;
+      border-radius: 2px;
     }
 
     &--ua::before {
@@ -131,6 +238,25 @@
 
     &--ru::before {
       background-image: url('../images/icon-ru.svg');
+    }
+  }
+}
+
+.appeal {
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    margin-right: 74px;
+    font-weight: 400;
+    font-style: italic;
+
+    & p:not(:last-child) {
+      margin-bottom: 18px;
     }
   }
 }

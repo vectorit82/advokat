@@ -3,11 +3,32 @@ body {
   color: $brown-900;
   font-size: 24px;
   font-weight: 700;
+  background-color: $bg;
 }
-
 
 .container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.button {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 18px;
+  padding: 24px 45px;
+  background-color: $red;
+  color: $marble;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.section {
+  padding: 140px 0;
+}
+
+.title {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
 }
