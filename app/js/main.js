@@ -1,8 +1,41 @@
 $(function () {
 
+  window.onscroll = function showHeader () {
+
+    var header = document.querySelector ('.menu__top');
+
+    if(window.pageYOffset > 20) {
+        header.classList.add('header__scroll');
+    }
+
+    else {
+        header.classList.remove('header__scroll');
+    }
+  }
+
+  // window.onscroll = function showHeader () {
+
+  //   var header = document.querySelector ('.logo__img');
+
+  //   if(window.pageYOffset > 20) {
+  //       header.classList.add('logo__scroll');
+  //   }
+
+  //   else {
+  //       header.classList.remove('logo__scroll');
+  //   }
+  // }
+
+
+
+  $(".menu__link, .logo").on("click", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 2000);
+	});
+
   const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    // direction: 'horizontal',
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
@@ -22,47 +55,27 @@ $(function () {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        // spaceBetween: 10,
       },
       360: {
         slidesPerView: 1,
-        // spaceBetween: 10,
       },
       575: {
         slidesPerView: 2,
-        // spaceBetween: 40,
       },
       768: {
         slidesPerView: 2,
-        // spaceBetween: 40,
       },
       992: {
         slidesPerView: 3,
-        // spaceBetween: 40,
       },
       1200: {
         slidesPerView: 4,
-        // spaceBetween: 40,
       }
     },
-    // speed: 400,
-    //  spaceBetween: 100,
-  
-    // // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination',
-    // },
-  
-    // // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
-  
-    // // And if we need scrollbar
-    // scrollbar: {
-    //   el: '.swiper-scrollbar',
-    // },
+  });
+
+  $('.science__btn').on('click', function () {
+    $('.close').toggleClass('open--active');
   });
 
 });
