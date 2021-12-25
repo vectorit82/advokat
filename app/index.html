@@ -49,21 +49,42 @@
             <div class="container">
 
               <ul class="menu__list">
+
                 <li class="menu__item">
-                  <a class="menu__link menu__link--marble" href="#appeal">Обращение</a>
+                  <a class="menu__link menu__link--marble" href="#appeal">
+                    Обращение
+                    <div class="menu__border menu__border--brown"></div>
+                  </a>
                 </li>
+
                 <li class="menu__item">
-                  <a class="menu__link menu__link--brown" href="#services">Услуги</a>
+                  <a class="menu__link menu__link--brown" href="#services">
+                    Услуги
+                    <div class="menu__border menu__border--ivory "></div>
+                  </a>
                 </li>
+
                 <li class="menu__item">
-                  <a class="menu__link menu__link--marble" href="#science">Научная деятельность</a>
+                  <a class="menu__link menu__link--marble" href="#science">
+                    Научная деятельность
+                    <div class="menu__border menu__border--brown"></div>
+                  </a>
                 </li>
+
                 <li class="menu__item">
-                  <a class="menu__link menu__link--brown" href="#">Задать вопрос</a>
+                  <a class="menu__link menu__link--brown" href="#question">
+                    Задать вопрос
+                    <div class="menu__border menu__border--ivory "></div>
+                  </a>
                 </li>
+
                 <li class="menu__item">
-                  <a class="menu__link menu__link--marble" href="#">Контакты</a>
+                  <a class="menu__link menu__link--marble" href="#footer">
+                    Контакты
+                    <div class="menu__border menu__border--brown"></div>
+                  </a>
                 </li>
+
               </ul>
 
             </div>
@@ -88,11 +109,20 @@
                 </span>
               </blockquote>
               <div class="header__btn-inner">
-                <button class="header__btn button" type="button">Получить&nbsp;консультацию</button>
+                <button data-fancybox data-src="#header-form" class="header__btn button" type="button">Получить&nbsp;консультацию</button>
                 <span class="header__line"></span>
+                <div class="header__modal" id="header-form">
+                  <form class="form" action="#">
+                    <label class="sr-only" for="">Ваше имя</label>
+                    <input class="form__input" type="text" placeholder="Имя" required>
+                    <label class="fofm__label sr-only" for=""></label>
+                    <input class="form__input" type="text" placeholder="Телефон" required>
+                    <button class="form__btn button" type="submit">Получить консультацию</button>
+                  </form>
+                </div>
               </div>
             </div>
-            <!-- <a class="header__bottom-btn" href="#"></a> -->
+            <a class="header__bottom-btn" href="#appeal"></a>
           </div>
         </div>
       </div>
@@ -180,7 +210,74 @@
                   </div>
                   <div class="services__back">
                     <h3 class="services__back-text">Гражданские споры</h3>
-                    <button class="services__btn button">Узнать больше</button>
+                    <button data-fancybox data-src="#civil-disputes" class="services__btn button">Узнать больше</button>
+                  </div>
+                </div>
+                <div class="services__modal" id="civil-disputes">
+                  <div class="container">
+                    <div class="services__page">
+                      <h3 class="title">Гражданские споры</h3>
+                      <div class="services__diskr">
+                        <p>
+                          Успешный исход судебного разбирательства по гражданскому спору во многом зависит от
+                          определения
+                          грамотной правовой позиции, сбора всей необходимой и правильной доказательной базы, а также от
+                          качественной подготовки всех документов к судебному процессу.
+                        </p>
+                      </div>
+                      <ul class="services__list">
+                        <li class="services__elem">
+                          <p>
+                            консультация адвоката (устная, письменная, в онлайн режиме) по гражданским спорам, в том
+                            числе семейным, наследственным, имущественным и земельным;
+                          </p>
+                        </li>
+                        <li class="services__elem">
+                          <p>
+                            сбор доказательной базы путём истребования информации либо документов адвокатскими
+                            запросами;
+                          </p>
+                        </li>
+                        <li class="services__elem">
+                          <p>
+                            написание всех видов процессуальных документов (заявлений, ходатайств, требований,
+                            уведомлений, исковых заявлений, отзывов на иски, ответов на отзывы, возражений, пояснений и
+                            так далее);
+                          </p>
+                        </li>
+                        <li class="services__elem">
+                          <p>
+                            сопровождение и защита прав клиента в судах всех специализаций;
+                          </p>
+                        </li>
+                        <li class="services__elem">
+                          <p>
+                            подготовка апелляционной жалобы и сопровождение клиента в суде апелляционной инстанции;
+                          </p>
+                        </li>
+                        <li class="services__elem">
+                          <p>
+                            подготовка кассационной жалобы и сопровождение клиента в суде кассационной инстанции;
+                          </p>
+                        </li>
+                        <li class="services__elem">
+                          <p>
+                            пересмотр решения суда в связи с вновь открывшимися обстоятельствами;
+                          </p>
+                        </li>
+                        <li class="services__elem">
+                          <p>
+                            подготовка мирового соглашения для подписания его сторонами процесса;
+                          </p>
+                        </li>
+                        <li class="services__elem">
+                          <p>
+                            представительство интересов клиента как должника, взыскателя на стадии исполнения решения
+                            суда.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -295,6 +392,15 @@
                   постановке проблемы исследования
                 </h3>
                 <span class="science__autor">И. В. Зозуля, И. С. Шулатова</span>
+
+                <div class="science__hover">
+                  <h3 class="science__title science__title--hover">
+                    Административно-правовые основы организации и деятельности Министерства доходов и сборов Украины: к
+                    постановке проблемы исследования
+                  </h3>
+                  <span class="science__bage">Перейти к статье</span>
+                </div>
+
               </a>
             </li>
 
@@ -305,6 +411,14 @@
                   Относительно понятия и основных задач Министерства доходов и сборов Украины
                 </h3>
                 <span class="science__autor">И. С. Шулатова</span>
+
+                <div class="science__hover">
+                  <h3 class="science__title science__title--hover">
+                    Относительно понятия и основных задач Министерства доходов и сборов Украины
+                  </h3>
+                  <span class="science__bage">Перейти к статье</span>
+                </div>
+
               </a>
             </li>
 
@@ -315,6 +429,15 @@
                   Зарубежный опыт формирования и организации единого органа по вопросам фискальной и таможенной политики
                 </h3>
                 <span class="science__autor">И. С. Шулатова</span>
+
+                <div class="science__hover">
+                  <h3 class="science__title science__title--hover">
+                    Зарубежный опыт формирования и организации единого органа по вопросам фискальной и таможенной
+                    политики
+                  </h3>
+                  <span class="science__bage">Перейти к статье</span>
+                </div>
+
               </a>
             </li>
 
@@ -324,6 +447,14 @@
                   Понятие и сущность Государственной фискальной службы Украины
                 </h3>
                 <span class="science__autor">И. С. Шулатова</span>
+
+                <div class="science__hover">
+                  <h3 class="science__title science__title--hover">
+                    Понятие и сущность Государственной фискальной службы Украины
+                  </h3>
+                  <span class="science__bage">Перейти к статье</span>
+                </div>
+
               </a>
             </li>
 
@@ -331,9 +462,19 @@
               <a class="science__link" target="_blank"
                 href="http://dspace.univd.edu.ua/xmlui/bitstream/handle/123456789/1142/derzhavna_fiskal_na_sluzhba_ukrayini_nap.pdf?sequence=2">
                 <h3 class="science__title">
-                  Государственная фискальная служба Украины: направления деятельности и место в государственном механизме
+                  Государственная фискальная служба Украины: направления деятельности и место в государственном
+                  механизме
                 </h3>
                 <span class="science__autor">И. С. Шулатова</span>
+
+                <div class="science__hover">
+                  <h3 class="science__title science__title--hover">
+                    Государственная фискальная служба Украины: направления деятельности и место в государственном
+                    механизме
+                  </h3>
+                  <span class="science__bage">Перейти к статье</span>
+                </div>
+
               </a>
             </li>
 
@@ -345,6 +486,16 @@
                   статуса
                 </h3>
                 <span class="science__autor">И. С. Шулатова</span>
+
+                <div class="science__hover">
+                  <h3 class="science__title science__title--hover">
+                    Основные особенности создания Государственной фискальной службы Украины и установление ее
+                    специального
+                    статуса
+                  </h3>
+                  <span class="science__bage">Перейти к статье</span>
+                </div>
+
               </a>
             </li>
 
@@ -354,6 +505,14 @@
                   Особенности Государственной фискальной службы Украины как субъекта государственного управления
                 </h3>
                 <span class="science__autor">И. В. Зозуля, И. С. Шулатова</span>
+
+                <div class="science__hover">
+                  <h3 class="science__title science__title--hover">
+                    Особенности Государственной фискальной службы Украины как субъекта государственного управления
+                  </h3>
+                  <span class="science__bage">Перейти к статье</span>
+                </div>
+
               </a>
             </li>
 
@@ -364,6 +523,14 @@
                   Предпосылки становления Государственной фискальной службы Украины
                 </h3>
                 <span class="science__autor">И. С. Шулатова</span>
+
+                <div class="science__hover">
+                  <h3 class="science__title science__title--hover">
+                    Предпосылки становления Государственной фискальной службы Украины
+                  </h3>
+                  <span class="science__bage">Перейти к статье</span>
+                </div>
+
               </a>
             </li>
 
@@ -373,6 +540,15 @@
                   Некоторые особенности исследования компетенций и полномочий Государственной фискальной службы Украины
                 </h3>
                 <span class="science__autor">И. С. Шулатова</span>
+
+                <div class="science__hover">
+                  <h3 class="science__title science__title--hover">
+                    Некоторые особенности исследования компетенций и полномочий Государственной фискальной службы
+                    Украины
+                  </h3>
+                  <span class="science__bage">Перейти к статье</span>
+                </div>
+
               </a>
             </li>
 
@@ -383,6 +559,14 @@
                   Виды и формы деятельности Государственной фискальной службы Украины и правовые основы их реализации
                 </h3>
                 <span class="science__autor">И. В. Зозуля, И. С. Мироненко</span>
+
+                <div class="science__hover">
+                  <h3 class="science__title science__title--hover">
+                    Виды и формы деятельности Государственной фискальной службы Украины и правовые основы их реализации
+                  </h3>
+                  <span class="science__bage">Перейти к статье</span>
+                </div>
+
               </a>
             </li>
 
@@ -393,16 +577,75 @@
                   Направления и формы взаимодействия в деятельности Государственной фискальной службы Украины
                 </h3>
                 <span class="science__autor">И. С. Мироненко</span>
+
+                <div class="science__hover">
+                  <h3 class="science__title science__title--hover">
+                    Направления и формы взаимодействия в деятельности Государственной фискальной службы Украины
+                  </h3>
+                  <span class="science__bage">Перейти к статье</span>
+                </div>
+
               </a>
             </li>
 
           </ul>
-          <button class="science__btn button">Показать больше</button>
+          <button class="science__btn button">
+            <a class="science__btn-link" href="#question"></a>
+            Показать больше
+          </button>
+        </div>
+      </section>
+
+      <section class="question section" id="question" style="background-image: url('images/footer-bg.jpg')">
+        <div class="question__inner">
+          <h2 class="question__title">Задать вопрос адвокату</h2>
+
+          <form class="form" action="#">
+            <label class="sr-only" for="">Ваше имя</label>
+            <input class="form__input" type="text" placeholder="Имя" required>
+            <label class="fofm__label sr-only" for=""></label>
+            <input class="form__input" type="text" placeholder="Email" required>
+            <label class="fofm__label sr-only" for=""></label>
+            <input class="form__input" type="text" placeholder="Телефон" required>
+            <label class="fofm__label sr-only" for=""></label>
+            <textarea class="form__input form__input--textarea" placeholder="Ваш вопрос" required></textarea>
+            <button class="form__btn button" type="submit">Отправить</button>
+          </form>
+
         </div>
       </section>
 
 
     </main>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__inner">
+
+          <a class="logo" href="#home">
+            <img class="logo__img" src="images/logo.svg" alt="Логотип">
+          </a>
+
+          <ul class="contacts footer__contacts">
+
+            <li class="contacts__item footer__item">
+              <a class="contacts__link contacts__link--tel" href="#">+38 (<span>050</span>) 40 54 544 </a>
+            </li>
+
+            <li class="contacts__item footer__item">
+              <a class="contacts__link contacts__link--mail" href="#">ilona.myronenko90@<span>ukr.net</span></a>
+            </li>
+
+          </ul>
+
+          <a class="footer__adress" target="_blank"
+            href="https://www.google.com/maps/place/%D0%90%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82+%D0%98%D0%BB%D0%BE%D0%BD%D0%B0+%D0%9C%D0%B8%D1%80%D0%BE%D0%BD%D0%B5%D0%BD%D0%BA%D0%BE/@49.9864845,36.2448133,17z/data=!3m1!4b1!4m5!3m4!1s0x4127a1ee0c7fc20b:0x4dd9f9b109a4fbb8!8m2!3d49.9864888!4d36.2469774">
+            г. Харьков <br><br> площадь<br> Героев Небесной Сотни, 23 <br><br> Офис 4
+          </a>
+
+        </div>
+      </div>
+    </footer>
 
   </div>
 

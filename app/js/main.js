@@ -13,22 +13,7 @@ $(function () {
     }
   }
 
-  // window.onscroll = function showHeader () {
-
-  //   var header = document.querySelector ('.logo__img');
-
-  //   if(window.pageYOffset > 20) {
-  //       header.classList.add('logo__scroll');
-  //   }
-
-  //   else {
-  //       header.classList.remove('logo__scroll');
-  //   }
-  // }
-
-
-
-  $(".menu__link, .logo").on("click", function (event) {
+  $(".menu__link, .logo, .header__bottom-btn, .science__btn-link").on("click", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
 			top = $(id).offset().top;
