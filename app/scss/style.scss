@@ -89,6 +89,13 @@
     border-radius: 5px;
     margin-bottom: 60px;
 
+    & span {
+
+      @include r($sm) {
+        display: block;
+      }
+    }
+
     @include r($lg) {
       display: block;
       text-align: center;
