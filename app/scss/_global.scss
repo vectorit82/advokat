@@ -22,6 +22,11 @@ body {
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
+  @include r($sm) {
+    font-size: 15px;
+    padding: 18px 25px;
+  }
+
   &:hover {
     background-color: #912121;
     color: rgba($ivory, 0.7);
@@ -34,6 +39,10 @@ body {
 
 .section {
   padding: 140px 0 50px 0;
+
+  @include r($lg) {
+    padding: 70px 0 50px 0;
+  }
 }
 
 .title {
@@ -41,6 +50,15 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 80px;
+
+  @include r($md) {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  @include r($sm) {
+    font-size: 18px;
+  }
 }
 
 .sr-only {

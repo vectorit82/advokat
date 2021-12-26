@@ -13,7 +13,12 @@ $(function () {
     }
   }
 
-  $(".menu__link, .logo, .header__bottom-btn, .science__btn-link").on("click", function (event) {
+  $('.menu__burger-btn, .burger__link').on('click', function () {
+    $('.burger__list, .menu__burger-line').toggleClass('burger--active');
+    $('body').toggleClass('look');
+  });
+
+  $(".menu__link, .logo, .header__bottom-btn, .science__btn-link, .burger__link").on("click", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
 			top = $(id).offset().top;

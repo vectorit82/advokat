@@ -17,30 +17,80 @@
       <div class="header__menu">
         <nav class="menu">
           <div class="menu__top">
+
+            <div class="burger">
+
+              <ul class="burger__list">
+                <li class="burger__item">
+                  <a class="burger__link" href="#appeal">Обращение адвоката</a>
+                </li>
+                <li class="burger__item">
+                  <a class="burger__link" href="#services">Услуги</a>
+                </li>
+                <li class="burger__item">
+                  <a class="burger__link" href="#science">Научная деятельность адвоката</a>
+                </li>
+                <li class="burger__item">
+                  <a class="burger__link" href="#question">Задать вопрос</a>
+                </li>
+                <li class="burger__item">
+                  <a class="burger__link" href="#footer">Контакты</a>
+                </li>
+                <li class="burger__item"></li>
+              </ul>
+
+            </div>
+
             <div class="container">
               <div class="menu__top-inner">
 
-                <a class="logo" href="#home">
-                  <img class="logo__img" src="images/logo.svg" alt="Логотип">
+                <a class="logo header__logo" href="#home">
+                 
+                    <img class="logo__img header__logo-img" src="images/logo.svg" width="171" height="48" alt="Логотип">
+                    <img class="logo__img header__logo-mobile" src="images/logo-mini.svg" width="28" height="32" alt="Логотип">
                 </a>
 
-                <ul class="contacts">
-                  <li class="contacts__item">
-                    <a class="contacts__link contacts__link--tel" href="#">+38 (<span>050</span>) 40 54 544 </a>
+                <div class="menu__contacts">
+                  <ul class="contacts">
+                    <li class="contacts__item">
+                      <a class="contacts__link contacts__link--tel" href="#">+38 (<span>050</span>) 40 54 544 </a>
+                    </li>
+                    <li class="contacts__item">
+                      <a class="contacts__link contacts__link--mail" href="#">ilona.myronenko90@<span>ukr.net</span></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="menu__language">
+
+                  <ul class="language">
+                    <li class="language__item">
+                      <a class="language__link language__link--ua" href="#">ua</a>
+                    </li>
+                    <li class="language__item">
+                      <a class="language__link language__link--ru" href="#">ru</a>
+                    </li>
+                  </ul>
+
+                </div>
+
+                <ul class="language language__mobile">
+                  <li class="language__item">
+                    <a class="language__link language__link--ua" href="#"></a>
                   </li>
-                  <li class="contacts__item">
-                    <a class="contacts__link contacts__link--mail" href="#">ilona.myronenko90@<span>ukr.net</span></a>
+                  <li class="language__item">
+                    <a class="language__link language__link--ru" href="#"></a>
                   </li>
                 </ul>
 
-                <ul class="language">
-                  <li class="language__item">
-                    <a class="language__link language__link--ua" href="#">ua</a>
-                  </li>
-                  <li class="language__item">
-                    <a class="language__link language__link--ru" href="#">ru</a>
-                  </li>
-                </ul>
+                <div class="menu__burger">
+
+                  <button class="menu__burger-btn" type="button">
+                    <span class="sr-only">Открыть меню</span>
+                    <span class="menu__burger-line"></span>
+                  </button>
+
+                </div>
 
               </div>
             </div>
@@ -109,7 +159,8 @@
                 </span>
               </blockquote>
               <div class="header__btn-inner">
-                <button data-fancybox data-src="#header-form" class="header__btn button" type="button">Получить&nbsp;консультацию</button>
+                <button data-fancybox data-src="#header-form" class="header__btn button"
+                  type="button">Получить&nbsp;консультацию</button>
                 <span class="header__line"></span>
                 <div class="header__modal" id="header-form">
                   <form class="form" action="#">
@@ -151,7 +202,7 @@
                 Буду рада сотрудничеству с Вами!
               </p>
             </div>
-            <img class="appeal__img" src="images/ilona.webp" width="" alt="">
+            <img class="appeal__img" src="images/ilona.webp" width="433" height="649" alt="Адвокат Илона Сергеевна">
           </div>
         </div>
         <div class="achievements">
@@ -622,7 +673,7 @@
       <div class="container">
         <div class="footer__inner">
 
-          <a class="logo" href="#home">
+          <a class="logo footer__logo" href="#home">
             <img class="logo__img" src="images/logo.svg" alt="Логотип">
           </a>
 
