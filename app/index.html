@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Адвокат Мироненко Илона Сергеевна</title>
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -44,18 +45,19 @@
             <div class="container">
               <div class="menu__top-inner">
 
-                <a class="logo header__logo" href="#home">                 
-                    <img class="logo__img header__logo-img" src="images/logo.svg" width="171" height="48" alt="Логотип">
-                    <img class="logo__img header__logo-mobile" src="images/logo-mini.svg" width="28" height="32" alt="Логотип">
+                <a class="logo header__logo" href="#home">
+                  <img class="logo__img header__logo-img" src="images/logo.svg" width="171" height="48" alt="Логотип">
+                  <img class="logo__img header__logo-mobile" src="images/logo-mini.svg" width="28" height="32"
+                    alt="Логотип">
                 </a>
 
                 <div class="menu__contacts">
                   <ul class="contacts">
                     <li class="contacts__item">
-                      <a class="contacts__link contacts__link--tel" href="#">+38 (<span>050</span>) 40 54 544 </a>
+                      <a class="contacts__link contacts__link--tel" href="tel:+380504054544">+38 (<span>050</span>) 40 54 544 </a>
                     </li>
                     <li class="contacts__item">
-                      <a class="contacts__link contacts__link--mail" href="#">ilona.myronenko90@<span>ukr.net</span></a>
+                      <a class="contacts__link contacts__link--mail" href="mailto:ilona.myronenko90@ukr.net">ilona.myronenko90@<span>ukr.net</span></a>
                     </li>
                   </ul>
                 </div>
@@ -162,12 +164,12 @@
                   type="button">Получить&nbsp;консультацию</button>
                 <span class="header__line"></span>
                 <div class="header__modal" id="header-form">
-                  <form class="form" action="#">
+                  <form class="header__form" action="#">
                     <label class="sr-only" for="name">Ваше имя</label>
-                    <input class="form__input" type="name" placeholder="Имя" required>
-                    <label class="fofm__label sr-only" for="tel">Введите телефон</label>
-                    <input class="form__input" type="tel" placeholder="Телефон" required>
-                    <button class="form__btn button" type="submit">Получить консультацию</button>
+                    <input class="header__form-input" type="name" placeholder="Имя" required>
+                    <label class="header__form-label sr-only" for="tel">Введите телефон</label>
+                    <input class="header__form-input" type="tel" placeholder="Телефон" required>
+                    <button class="header__form-btn" type="submit">Получить консультацию</button>
                   </form>
                 </div>
               </div>
@@ -366,7 +368,41 @@
                   </div>
                   <div class="services__back">
                     <h3 class="services__back-text">Уголовные дела</h3>
-                    <button class="services__btn button">Узнать больше</button>
+                    <button data-fancybox data-src="#criminal-proceedings" class="services__btn button">Узнать больше</button>
+                  </div>
+                </div>
+                <div class="services__modal" id="criminal-proceedings">
+                  <div class="container">
+                    <div class="services__page">
+                      <h3 class="title">Защита в уголовных производствах и досудебных расследований</h3>
+                      <div class="services__diskr">
+                        <p>
+                          Адвокат, осуществляющий защиту в уголовном производстве — и на стадии досудебного расследования, и в суде, должен безупречно ориентироваться в нормах уголовного и уголовного процессуального законодательства, досконально знать специфику проведения и оформления всех следственных действий, во всех случаях занимать тактичную, а также принципиальную позицию и, конечно, уметь выстроить и, главное, донести свою позицию по делу, как до сотрудников правоохранительных органов, так и до суда.
+                        </p>
+                        <p>
+                          Мы специализируемся в том числе и на ведении сложных и особо сложных уголовных дел, в том числе по даче и получении неправомерной выгоды (ст. 368, 369* Уголовного кодекса Украины), хозяйственных преступлений (ст.ст. 190, 191, 209, 212* Уголовного кодекса Украины), должностных преступлений (ст.ст. 364, 365, 366 Уголовного кодекса Украины), преступлений против личности (ст. 121, 122, 125).
+                        </p>
+                        <p>
+                          Опыт работы наших адвокатов в правоохранительных органах позволяет хорошо ориентироваться в тонкостях и уловках следствия, противопоставить им грамотную и профессиональную защиту, направленную на формирование такой правовой позиции, которая поможет оправдать или свести позицию стороны обвинения на «минимум».
+                        </p>
+                      </div>
+                      <ul class="services__list">
+                        <li class="services__elem">
+                          <p>
+                            Мы оказываем качественную правовую помощь и сопровождаем:
+                          </p>
+                          <span>
+                            - на стадии досудебного расследования уголовного производства в правоохранительных органах;
+                          </span>
+                          <span>
+                            - во время проведения всех следственных действий с участием потерпевшего, подозреваемого, обвиняемого: допросы, следственные эксперименты, обыски, осмотры, избрание меры пресечения, и другие следственные действия;
+                          </span>
+                          <span>
+                            - на стадии рассмотрения уголовного производства в судах всех инстанций.
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -435,7 +471,7 @@
           <h2 class="title">Научная деятельность адвоката</h2>
           <ul class="science__list">
 
-            <li class="science__item">
+            <li class="science__item wow animate__slideInLeft" data-wow-offset="50" data-wow-duration="2s">
               <a class="science__link" href="#">
                 <h3 class="science__title">
                   Административно-правовые основы организации и деятельности Министерства доходов и сборов Украины: к
@@ -454,7 +490,7 @@
               </a>
             </li>
 
-            <li class="science__item">
+            <li class="science__item wow animate__slideInUp" data-wow-offset="50" data-wow-duration="2s">
               <a class="science__link" target="_blank"
                 href="http://dspace.univd.edu.ua/xmlui/bitstream/handle/123456789/1142/derzhavna_fiskal_na_sluzhba_ukrayini_nap.pdf?sequence=2">
                 <h3 class="science__title">
@@ -472,7 +508,7 @@
               </a>
             </li>
 
-            <li class="science__item">
+            <li class="science__item wow animate__slideInRight" data-wow-offset="50" data-wow-duration="2s">
               <a class="science__link" target="_blank"
                 href="https://cyberleninka.ru/article/n/zarubezhnyy-opyt-formirovaniya-i-organizatsii-edinogo-organa-po-voprosam-fiskalnoy-i-tamozhennoy-politiki/viewer">
                 <h3 class="science__title">
@@ -491,7 +527,7 @@
               </a>
             </li>
 
-            <li class="science__item">
+            <li class="science__item wow animate__slideInLeft" data-wow-offset="50" data-wow-duration="2s">
               <a class="science__link" target="_blank" href="https://core.ac.uk/download/pdf/187223712.pdf">
                 <h3 class="science__title">
                   Понятие и сущность Государственной фискальной службы Украины
@@ -508,7 +544,7 @@
               </a>
             </li>
 
-            <li class="science__item">
+            <li class="science__item wow animate__slideInUp" data-wow-offset="50" data-wow-duration="2s">
               <a class="science__link" target="_blank"
                 href="http://dspace.univd.edu.ua/xmlui/bitstream/handle/123456789/1142/derzhavna_fiskal_na_sluzhba_ukrayini_nap.pdf?sequence=2">
                 <h3 class="science__title">
@@ -528,7 +564,7 @@
               </a>
             </li>
 
-            <li class="science__item">
+            <li class="science__item wow animate__slideInRight" data-wow-offset="50" data-wow-duration="2s">
               <a class="science__link" target="_blank"
                 href="http://dspace.univd.edu.ua/xmlui/bitstream/handle/123456789/271/zasadnichi_osoblivosti_stvorennya_derzhavnoyi_fiskal_noyi_sluzhbi_ukrayini_ta_vstanovlennya_yiyi_special_nogo_statusu.pdf?sequence=2&isAllowed=y">
                 <h3 class="science__title">
@@ -549,7 +585,7 @@
               </a>
             </li>
 
-            <li class="science__item close">
+            <li class="science__item close wow animate__slideInLeft" data-wow-offset="50" data-wow-duration="2s">
               <a class="science__link" target="_blank" href="https://oaji.net/articles/2016/2258-1452248245.pdf">
                 <h3 class="science__title">
                   Особенности Государственной фискальной службы Украины как субъекта государственного управления
@@ -566,7 +602,7 @@
               </a>
             </li>
 
-            <li class="science__item close">
+            <li class="science__item close wow animate__slideInUp" data-wow-offset="50" data-wow-duration="2s">
               <a class="science__link" target="_blank"
                 href="https://otherreferats.allbest.ru/finance/00914110_0.html#text">
                 <h3 class="science__title">
@@ -584,7 +620,7 @@
               </a>
             </li>
 
-            <li class="science__item close">
+            <li class="science__item close wow animate__slideInRight" data-wow-offset="50" data-wow-duration="2s">
               <a class="science__link" href="#">
                 <h3 class="science__title">
                   Некоторые особенности исследования компетенций и полномочий Государственной фискальной службы Украины
@@ -602,7 +638,7 @@
               </a>
             </li>
 
-            <li class="science__item close">
+            <li class="science__item close wow animate__slideInLeft" data-wow-offset="50" data-wow-duration="2s">
               <a class="science__link" target="_blank"
                 href="https://deliverypdf.ssrn.com/delivery.php?ID=217116104122089029073124123107079103121046070053091056099116020109090025113116023081057056103059050003021087125030007113086083000085032086058068001116120067000100106025080050118126124101092083099109005028031023083119106017070123013011092120066093069115&EXT=pdf&INDEX=TRUE">
                 <h3 class="science__title">
@@ -620,7 +656,7 @@
               </a>
             </li>
 
-            <li class="science__item close">
+            <li class="science__item close wow animate__slideInUp" data-wow-offset="50" data-wow-duration="2s">
               <a class="science__link" target="_blank"
                 href="https://er.nau.edu.ua/bitstream/NAU/29196/1/%D0%94%D0%B8%D1%81%D0%B5%D1%80%D1%82%D0%B0%D1%86%D1%96%D1%8F%20%D0%9C%D0%B8%D1%80%D0%BE%D0%BD%D0%B5%D0%BD%D0%BA%D0%BE%20%D0%86.%D0%A1..pdf">
                 <h3 class="science__title">
@@ -678,11 +714,11 @@
           <ul class="contacts footer__contacts">
 
             <li class="contacts__item footer__item">
-              <a class="contacts__link contacts__link--tel" href="#">+38 (<span>050</span>) 40 54 544 </a>
+              <a class="contacts__link contacts__link--tel" href="tel:+380504054544">+38 (<span>050</span>) 40 54 544 </a>
             </li>
 
             <li class="contacts__item footer__item">
-              <a class="contacts__link contacts__link--mail" href="#">ilona.myronenko90@<span>ukr.net</span></a>
+              <a class="contacts__link contacts__link--mail" href="mailto:ilona.myronenko90@ukr.net">ilona.myronenko90@<span>ukr.net</span></a>
             </li>
 
           </ul>

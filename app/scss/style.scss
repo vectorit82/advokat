@@ -74,6 +74,7 @@
 
     @include r($md) {
       font-size: 24px;
+      margin-bottom: 10px;
     }
 
     @include r($sm) {
@@ -99,6 +100,7 @@
     @include r($lg) {
       display: block;
       text-align: center;
+      margin-bottom: 30px;
     }
 
     @include r($md) {
@@ -107,7 +109,7 @@
 
     @include r($sm) {
       font-size: 24px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
 
@@ -119,6 +121,14 @@
     margin: 0 auto;
     margin-bottom: 60px;
     text-align: center;
+
+    @include r($lg) {
+      margin-bottom: 30px;
+    }
+
+    @include r($md) {
+      margin-bottom: 20px;
+    }
   }
 
   &__phrase {
@@ -192,8 +202,7 @@
     transition: opacity 0.5s ease-in-out;
 
     @include r($md) {
-      width: 150px;
-      height: 35px;
+     display: none;
     }
 
     &::after {
@@ -217,6 +226,44 @@
     max-width: 100%;
     background-image: url('../images/tree3.jpg');
     @extend %bg;
+    border-radius: 5px;
+  }
+
+  &__form {
+    font-size: 16px;
+    max-width: 90%;
+    max-width: 300px;
+  }
+
+  &__form-input {
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px 18px;
+    max-width: 100%;
+    width: 100%;
+    border: transparent;
+    border-radius: 5px;
+  }
+
+  &__form-btn {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    color: $ivory;
+    background-color: $red;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #912121;
+      color: rgba($ivory, 0.7);
+    }
+  
+    &:active {
+      color: rgba($ivory, 0.5);
+    }
   }
 }
 
@@ -849,18 +896,23 @@
     background-color: $bg;
     max-width: 100%;
     width: 100%;
+    overflow: auto;
   }
 
   &__page {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
   }
 
   &__diskr {
     text-align: center;
-    margin-bottom: 100px;
     font-size: 18px;
     max-width: 800px;
+    margin: 0 auto 100px;
+
+    & p:not(:last-child) {
+      margin-bottom: 18px;
+    }
   }
 
   &__list {
@@ -875,6 +927,15 @@
     max-width: 800px;
     padding-left: 60px;
 
+    & p {
+      margin-bottom: 18px;
+    }
+
+    & span {
+      display: inline-block;
+      margin-bottom: 18px;
+    }
+
     & p::before {
       display: block;
       @include pseudo;
@@ -886,11 +947,17 @@
       top: 0;
     }
 
-
     &:not(:last-child) {
       margin-bottom: 50px;
     }
   }
+}
+
+.fancybox__content>.carousel__button.is-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--fancybox-color, #000);
 }
 
 .science {
@@ -1100,9 +1167,6 @@
 
     @include r($md) {
       margin-bottom: 50px;
-      // justify-content: center;
-      // align-items: center;
-      // text-align: center;
     }
 
     & span {
@@ -1114,6 +1178,18 @@
 
     &:first-child {
       margin-bottom: 20px;
+    }
+  }
+
+  &__adress {
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
     }
   }
 }
