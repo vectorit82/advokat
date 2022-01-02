@@ -18,19 +18,19 @@
   -webkit-line-clamp: $lines-to-show;
 }
 
-// @mixin line-clamp($lines: 1) {
-//   @if $lines <=1 {
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     white-space: nowrap;
-//   } @else {
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     display: -webkit-box;
-//     -webkit-line-clamp: $lines;
-//     -webkit-box-orient: vertical;
-//   }
-// }
+@mixin line-clamp($lines: 1) {
+  @if $lines <=1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  }
+}
 
 @mixin r($width) {
   @media only screen and (max-width: $width+ "px") {
